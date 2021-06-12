@@ -25,6 +25,10 @@ if(verCategoria.toUpperCase() === 'S'){
     console.log('-----------------------------------------------')
     console.log(' alimento, bebida, casa, higiene, informatica  ')
     console.log('-----------------------------------------------')
+    console.log('      Hoje é dia da nossa *BLACKFRIDAY*        ')
+    console.log('-----------------------------------------------')
+    console.log('   Todas as compras com 15% de desconto no valor total   ')
+    console.log('---------------------------------------------------------')
 
     
 
@@ -37,6 +41,12 @@ if(verCategoria.toUpperCase() === 'S'){
 }else{
   console.log('Essa e nossa lista de produtos')
   console.table(produtos)
+  console.log('-----------------------------------------------')
+  console.log('      Hoje é dia da nossa *BLACKFRIDAY*        ')
+  console.log('-----------------------------------------------')
+  console.log('   Todas as compras com 15% de desconto no valor total   ')
+  console.log('---------------------------------------------------------')
+
 
 }
 
@@ -91,19 +101,19 @@ if(realizarACompra.toUpperCase() === 'S'){
         cupomDesc = ler.question('Voce possue cupom de desconto: (S/N)').toLowerCase(); {
             if (cupomDesc === 's'){
                 cupom = parseInt(ler.question('Digite o valor do seu cupom de desconto: '))
+                for (i = 0; i < 1000; i++) {
+                  if(cupom !== 15){
+                      cupom = parseInt(ler.question('Lamento, cupom invalido! Tente novamente: '))
+                  }else{
+                      break;
+                  }
+              }
             }
         }
     } else {
       fazerCompras()
     }
 
-    for (i = 0; i < 1000; i++) {
-        if(cupom > 15 || cupom < 0){
-            cupom = parseInt(read.question('Lamento, cupom invalido! Tente novamente: '))
-        }else{
-            break;
-        }
-    }
 }
 fazerCompras()
 
