@@ -1,21 +1,20 @@
 console.log('--------------------------------------')
 console.log('     Projeto Carrinho de Compras     ')
-console.log('         Dev. Ana Paula              ')
+console.log('         Aluna: Ana Paula            ')
 console.log('--------------------------------------')
 
-// const db   = require('./database')
-// const { produtos } = db
+
 
 const produtos = require('./database')
 
 
 
 produtos.sort((a, b)=> a.preco - b.preco)
-// console.table(produtos)
+
 
 const carrinho = []
 let arry1 = new Array();
-//let itens = new Array();
+
 const ler = require('readline-sync')
 const db = require('./database')
 
