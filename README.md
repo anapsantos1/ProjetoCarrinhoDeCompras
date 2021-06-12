@@ -4,7 +4,9 @@
 
 <h4 align = "center">Projeto Carrinho de Compras</h4>
 
- **Projeto JavaScript**
+ **O resultado do meu projeto JavaScript**
+
+![alt text](https://github.com/anapsantos1/ProjetoCarrinhoDeCompras/blob/main/image/Animation.gif)
 
 
 
